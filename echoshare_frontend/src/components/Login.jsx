@@ -14,7 +14,7 @@ const Login = () => {
   const handleGoogleResponse = (response) => {
     localStorage.setItem('user', JSON.stringify(response))
 
-    const {name, sub, picture } = response
+    const { name, sub, picture } = response
 
     
 
