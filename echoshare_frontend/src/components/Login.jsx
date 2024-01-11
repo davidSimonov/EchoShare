@@ -16,8 +16,6 @@ const Login = () => {
 
     const { name, sub, picture } = response
 
-    
-
     const doc = {
       _id: sub,
       _type: 'user',
@@ -70,16 +68,6 @@ const Login = () => {
           </div>
 
           <div className='shadow-2xl'>
-          {/* <GoogleLogin
-            onSuccess={credentialResponse => {
-              console.log(credentialResponse);
-              const decoded = jwtDecode(credentialResponse.credential);
-              console.log(decoded)
-            }}
-            onError={() => {
-              console.log('Login Failed');
-            }}
-          /> */}
             <button 
               type='button'
               className='bg-mainColor flex justify-center items-center p-3 rounded-lg cursor-pointer outline-none'

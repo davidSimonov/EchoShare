@@ -32,6 +32,9 @@ const Feed = () => {
   }, [categoryId])
 
   if(loading) return <Spinner message="We are setting up your feed." />
+
+  if(!pins?.length) return <h2 className='text-center m-8'>No pins available</h2>
+
   return (
     <div>
       {pins && <MasonryLayout pins={pins} />}
